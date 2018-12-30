@@ -8,7 +8,7 @@ export const DateTime = () => {
         return () => {
             clearInterval(id);
         }
-    });
+    }, []);
 
     return (
         <h4>{`${dateTime.toLocaleDateString()} ${dateTime.toLocaleTimeString()}`}</h4>
